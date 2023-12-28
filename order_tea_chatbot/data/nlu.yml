@@ -1,0 +1,1355 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - xin chào
+      - chào bạn
+      - hello
+      - hi
+      - hey
+      - mình có vài câu hỏi
+      - có ai giúp mình không
+      - bạn ơi
+      - anh ơi
+      - chị ơi
+      - cháu ơi
+      - hello
+      - chào
+      - hi
+      - có ai ở đây không?
+      - shop ơi
+      - shop ơi cho mình hỏi
+      - alo
+      - alô
+
+  - intent: goodbye
+    examples: |
+      - tạm biệt
+      - chào tạm biệt
+      - tạm biệt cậu
+      - tạm biệt nhé
+      - bye
+      - goodbye
+      - bai
+      - bái bai
+
+  - intent: thanks
+    examples: |
+      - chuẩn
+      - hay
+      - siêu
+      - tuyệt
+      - cám ơn
+      - thanks
+      - thank you
+      - ok
+      - cảm ơn bạn
+      - cảm ơn bạn nhiều nhé
+      - cảm ơn
+      - xin cảm ơn
+
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - oke
+      - ok
+      - okey
+      - oki
+      - đúng
+      - đúng rồi
+      - đúng rồi bạn
+      - vâng ạ
+      - vâng
+      - dạ đúng ạ
+      - đồng ý
+      - nhất trí
+      - chính xác
+      - chuẩn rồi
+      - chính xác rồi
+      - chắc chắn rồi
+      - sure
+      - dĩ nhiên rồi
+      - đúng như vậy ạ
+      - có
+
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - không
+      - tôi không nghĩ vậy
+      - không phải
+      - không phải ạ
+      - sai rồi
+      - không đúng
+      - không phải vậy
+      - hong
+      - hông
+
+  - intent: stop
+    examples: |
+      - dừng lại
+      - mình không muốn mua nữa
+      - tôi không muốn mua nữa
+      - không mua nữa
+      - stop
+      - ngưng lại
+      - thôi dừng
+      - dừng lại bạn ơi
+      - dừng
+      - ngưng
+      - nghỉ mua
+      - hỏng mua nữa
+      - hong mua
+      - hủy
+
+  - intent: ask_menu
+    examples: |
+      - menu của quán là gì vậy
+      - cho mình xin menu với ạ
+      - menu
+      - bạn có thể gừi menu cho mình được không
+      - thức uống của quán là gì vậy ạ
+      - quán này bán gì
+      - menu gồm những món gì vậy
+      - quán mình bán những loại trà nào vậy ạ
+      - quán mình có những món gì vậy
+      - quán mình có bao nhiêu loại trà vậy ạ
+      - cho xin cái menu được không
+      - ở đây bán những món gì vậy
+      - ở đây bán trà gì
+      - ở đây bán gì
+
+  - intent: ask_function
+    examples: |
+      - em có thể làm được gì
+      - chức năng của em là gì
+      - bạn có thể giúp được gì
+      - mày làm được gì
+      - m có thể giúp gì cho tao
+      - chức năng
+      - bạn có thể làm gì vậy
+      - em có thể giúp anh làm gì
+      - bạn có thể giúp gì được cho mình vậy
+
+  - intent: ask_price
+    examples: |
+      - giá của [trà đào](tea_type)
+      - cho mình hỏi giá của [trà sen](tea_type)
+      - giá của [trà hoa cúc](tea_type)
+      - [trà ô long](tea_type) bao nhiêu vậy ạ
+      - [trà lipton](tea_type) bao nhiêu một ly
+      - cho mình hỏi [trà đào cam sả](tea_type) bán sao vậy ạ
+      - shop ơi [trà thảo mộc](tea_type) bao nhiêu một ly vậy ạ
+      - [trà đá](tea_type) bao nhiêu
+      - [trà hoa hồng](tea_type) bán nhiêu
+      - [trà lipton](tea_type) nhiêu tiền
+      - [trà đào](tea_type) nhiu tiền
+
+  - intent: inquire_tea_type
+    examples: |
+      - quán mình có bán [trà dào](tea_type) không ạ
+      - ở đây có bán [trà sen](tea_type) không ạ
+      - tiệm mình có kinh doanh [trà vải](tea_type) không
+      - cho mình hỏi ở đây có bán [trà hoa hồng](tea_type) không
+      - có bán [trà hoa cúc](tea_type) không
+      - bạn có [trà thảo mộc](tea_type) không
+      - có [trà cam](tea_type) không
+      - quán mình có [trà lipton](tea_type) hong ạ
+      - quán mình có bán [trà tắc](tea_type) hong
+      - quán mình có bán [trà sữa](tea_type) không
+
+  - intent: ask_name
+    examples: |
+      - mày là ai
+      - bạn là ai đó
+      - em là ai vậy
+      - tên của bạn là gì
+      - bạn là ai
+      - tên gì
+
+  - intent: buy_tea
+    examples: |
+      - mua trà
+      - tôi muốn mua trà
+      - tôi muốn đặt trà
+      - tôi muốn order trà
+      - tôi muốn đặt thức uống
+      - tôi muốn đặt đồ uống
+      - tôi muốn order thức uống
+      - cho tôi trà
+      - mình muốn mua trà
+      - mình muốn đặt trà
+      - mình muốn order trà
+      - mình muốn đặt thức uống
+      - mình muốn đặt đồ uống
+      - mình muốn order thức uống
+      - cho mình ly trà
+      - anh muốn mua trà
+      - anh muốn đặt trà
+      - anh muốn order trà
+      - anh muốn đặt thức uống
+      - anh muốn đặt đồ uống
+      - anh muốn order thức uống
+      - cho anh ly trà
+      - chị muốn mua trà
+      - chị muốn đặt trà
+      - chị muốn order trà
+      - chị muốn đặt thức uống
+      - chị muốn đặt đồ uống
+      - chị muốn order thức uống
+      - cho chị ly trà
+      - mình muốn đặt hàng
+      - cho tao trà
+      - cho tao mua trà
+      - cho mình [mười](tea_quan) [trà đào](tea_type) size [M](tea_size)
+      - tôi muốn đặt [một](tea_quan) [trà ô long](tea_type) size [L](tea_size)
+      - tôi muốn đặt [hai](tea_quan) [trà đào](tea_type) size [M](tea_size)
+      - tôi muốn đặt [1](tea_quan) [trà ô long](tea_type) size [L](tea_size)
+      - tôi muốn đặt [2](tea_quan) [trà đào](tea_type) size [M](tea_size)
+      - cho tôi [một](tea_quan) [trà vải](tea_type)
+      - tôi muốn order [mười lăm](tea_quan) [trà ô long](tea_type) size [L](tea_size)
+      - tôi muốn order [mười hai](tea_quan) [trà đào](tea_type) size [M](tea_size)
+      - tôi muốn order [3](tea_quan) [trà ô long](tea_type) size [L](tea_size)
+      - tôi muốn order [4](tea_quan) [trà đào](tea_type) size [M](tea_size)
+      - đặt [trà lipton](tea_type) size [M](tea_size) với số lượng [5](tea_quan)
+      - đặt [trà sen](tea_type) size [L](tea_size) với số lượng [bảy](tea_quan)
+      - order [mười một](tea_quan) [trà thảo mộc](tea_type) size [L](tea_size)
+      - mình muốn đặt [ba](tea_quan) [trà ô long](tea_type) size [L](tea_size)
+      - mình muốn đặt [bốn](tea_quan) [trà đào](tea_type) size [M](tea_size)
+      - mình muốn đặt [6](tea_quan) [trà ô long](tea_type) size [L](tea_size)
+      - mình muốn đặt [7](tea_quan) [trà đào](tea_type) size [M](tea_size)
+      - cho mình [một](tea_quan) [trà vải](tea_type)
+      - mình muốn order [năm](tea_quan) [trà ô long](tea_type) size [L](tea_size)
+      - mình muốn order [sáu](tea_quan) [trà hoa cúc](tea_type) size [M](tea_size)
+      - mình muốn order [8](tea_quan) [trà ô long](tea_type) size [L](tea_size)
+      - mình muốn order [9](tea_quan) [trà hoa hồng](tea_type) size [M](tea_size)
+      - đặt [trà tắc](tea_type) size [M](tea_size) với số lượng [5](tea_quan)
+      - đặt [trà đào cam sả](tea_type) size [L](tea_size) với số lượng [bảy](tea_quan)
+      - order cho anh [tám](tea_quan) [trà hoa cúc](tea_type) size [L](tea_size)
+      - order cho chị [chín](tea_quan) [trà thảo mộc](tea_type) size [L](tea_size)
+      - bạn order giúp chị [mười](tea_quan) [trà hoa hồng](tea_type) nhé
+      - bạn order [mười một](tea_quan) [trà hoa cúc](tea_type) giúp chị nhé
+      - em order giúp anh [năm](tea_quan) [trà hoa hồng](tea_type) nhé
+      - em order [mười hai](tea_quan) [trà đào cam sả](tea_type) giúp anh nhé
+      - cho anh [mười ba](tea_quan) [trà tắc](tea_type) nha
+      - anh muốn đặt [trà đào cam sả](tea_type)
+      - mình muốn order [trà cam](tea_type)
+      - cho tui [trà ô long](tea_type) nha
+      - lấy cho mình [một](tea_quan) [trà lipton](tea_type) nha
+      - cho anh [hai](tea_quan) [trà sữa](tea_type) nha
+  - intent: inform
+    examples: |
+      - [trà đào cam sả](tea_type)
+      - [trà ô long](tea_type)
+      - [trà vải](tea_type)
+      - [trà thảo mộc](tea_type)
+      - [trà hoa hồng](tea_type)
+      - [trà hoa cúc](tea_type)
+      - [trà cam](tea_type)
+      - [trà lipton](tea_type)
+      - [trà sen](tea_type)
+      - [trà đào](tea_type)
+      - [trà tắc](tea_type)
+      - [trà đen](tea_type)
+      - [trà xanh](tea_type)
+      - [trà oolong](tea_type)
+      - [trà trắng](tea_type)
+      - [trà đỏ](tea_type)
+      - [trà hồng trà](tea_type)
+      - [trà Jasmin](tea_type)
+      - [trà hoa cúc](tea_type)
+      - [trà lá sen](tea_type)
+      - [trà lá liễu](tea_type)
+      - [trà hạt sen](tea_type)
+      - [trà lá dứa](tea_type)
+      - [trà lá vải](tea_type)
+      - [trà gừng](tea_type)
+      - [trà cam](tea_type)
+      - [trà chanh](tea_type)
+      - [trà đào](tea_type)
+      - [trà táo](tea_type)
+      - [trà dứa](tea_type)
+      - [trà đào bào](tea_type)
+      - [trà việt quất](tea_type)
+      - [trà đu đủ](tea_type)
+      - [trà dứa tươi](tea_type)
+      - [trà bưởi](tea_type)
+      - [trà cà phê](tea_type)
+      - [trà sâm dứa](tea_type)
+      - [trà oải hương](tea_type)
+      - [trà đào mật ong](tea_type)
+      - [trà táo xanh](tea_type)
+      - [trà quế](tea_type)
+      - [trà bạc hà](tea_type)
+      - [trà cam thảo](tea_type)
+      - [trà đào cam thảo](tea_type)
+      - [trà bạch đàn](tea_type)
+      - [trà hoa hồi](tea_type)
+      - [trà nha đam](tea_type)
+      - [trà hương thảo](tea_type)
+      - [trà đen sữa](tea_type)
+      - [trà sữa trân châu](tea_type)
+      - [trà thạch rau câu](tea_type)
+      - [trà sữa dâu](tea_type)
+      - [trà sữa khoai môn](tea_type)
+      - [trà sữa trà xanh](tea_type)
+      - [trà sữa hoa quả](tea_type)
+      - [trà sữa hạt chia](tea_type)
+      - [trà sữa matcha](tea_type)
+      - [trà sữa trứng](tea_type)
+      - [trà sữa cà phê](tea_type)
+      - [trà sữa trà oolong](tea_type)
+      - [trà sữa trà đen](tea_type)
+      - [trà cúc bích](tea_type)
+      - vâng [trà đá](tea_type)
+      - dạ [trà sữa](tea_type) ạ
+      - vâng [trà chanh](tea_type) ạ
+      - dạ [hồng trà](tea_type)
+      - [trà tắc](tea_type) nhé
+      - [trà lài](tea_type) nha
+      - [trà dâu](tea_type) ạ
+      - [trà vải](tea_type) đi
+      - [trà đào](tea_type) nha
+      - [trà lipton](tea_type) ạ
+      - [trà lipton](tea_type) nhé
+      - [nước ép cà rốt](tea_type)
+      - [nước ép dưa hấu](tea_type)
+      - [cà phê sữa nóng](tea_type)
+      - [nước ép cà chua](tea_type)
+      - [sinh tố bơ](tea_type)
+      - [cà phê sữa tươi](tea_type)
+      - [nước ép cải bó xôi](tea_type)
+      - [sữa chua trái cây](tea_type)
+      - [trà xanh matcha](tea_type)
+      - [sinh tố việt quất](tea_type)
+      - [sữa đậu nành](tea_type)
+      - [nước ép dưa leo](tea_type)
+      - [cà phê sữa kem](tea_type)
+      - [trà sữa đào](tea_type)
+      - [nước chanh leo](tea_type)
+      - [nước ép táo](tea_type)
+      - [sinh tố xoài](tea_type)
+      - [cà phê moka](tea_type)
+      - [sữa chua xoài](tea_type)
+      - [trà oolong đào](tea_type)
+      - [nước mía](tea_type)
+      - [cà phê sữa đá xay](tea_type)
+      - [trà sữa thái](tea_type)
+      - [nước cam ép tươi](tea_type)
+      - [sinh tố nha đam](tea_type)
+      - [nước ép cà chua](tea_type)
+      - [cà phê pha máy](tea_type)
+      - [trà sen](tea_type)
+      - [nước tăng lực](tea_type)
+      - [sinh tố bơ đậu phộng](tea_type)
+      - [nước mắm me](tea_type)
+      - [cà phê đen đá](tea_type)
+      - [trà sữa matcha](tea_type)
+      - [sữa chua trân châu đường đen](tea_type)
+      - [nước dừa tươi](tea_type)
+      - [trà đen](tea_type)
+      - [sinh tố chuối](tea_type)
+      - [nước chanh muối](tea_type)
+      - [cà phê sữa đá](tea_type)
+      - [sữa chua nếp cẩm](tea_type)
+      - [nước cam mật ong](tea_type)
+      - [sinh tố dâu tây](tea_type)
+      - [cà phê nóng](tea_type)
+      - [sữa đậu nành trân châu](tea_type)
+      - [nước chanh tắc](tea_type)
+      - [trà hoa cúc](tea_type)
+      - [sinh tố bơ sữa chua](tea_type)
+      - [cà phê sữa bạc hà](tea_type)
+      - [sữa tươi](tea_type)
+      - [trà bí đao](tea_type)
+      - [nước sâm](tea_type)
+      - [sinh tố bơ đá](tea_type)
+      - [cà phê sữa dừa](tea_type)
+      - [trà sữa bạc hà](tea_type)
+      - [nước ép cải xoăn](tea_type)
+      - [cà phê rang xay](tea_type)
+      - [trà thạch đào](tea_type)
+      - [nước cam mật ong](tea_type)
+      - [sinh tố chuối dừa](tea_type)
+      - [nước mắm nhĩ](tea_type)
+      - [cà phê sữa phin](tea_type)
+      - [trà đào hồng](tea_type)
+      - [sữa chua trân châu đường đen](tea_type)
+      - [nước cốt dừa](tea_type)
+      - [trà sữa bưởi](tea_type)
+      - [sinh tố dâu tây sữa chua](tea_type)
+      - [nước chanh muối chanh dây](tea_type)
+      - [cà phê đen nóng](tea_type)
+      - [trà xanh lục trà](tea_type)
+      - [sữa đậu nành đen](tea_type)
+      - [nước cam ép cà rốt](tea_type)
+      - [sinh tố bơ kiwi](tea_type)
+      - [cà phê sữa dừa đá](tea_type)
+      - [sữa chua trân châu đường đen](tea_type)
+      - [nước ép nho](tea_type)
+      - [trà xanh sen](tea_type)
+      - [sinh tố đu đủ](tea_type)
+      - [cà phê sữa caramel](tea_type)
+      - [sữa đậu nành trân châu đường đen](tea_type)
+      - [trà hoa cúc đá xay](tea_type)
+      - [nước chanh muối vỏ cam](tea_type)
+      - [sinh tố việt quất sữa chua](tea_type)
+      - [cà phê sữa nâu](tea_type)
+      - [trà sữa việt quất](tea_type)
+      - [sữa đậu nành trân châu đường đen](tea_type)
+      - [trà chanh dây](tea_type)
+      - [nước ép lựu](tea_type)
+      - [trà sữa matcha](tea_type)
+      - [sinh tố xoài](tea_type)
+      - [cà phê sữa kem](tea_type)
+      - [nước ép táo](tea_type)
+      - [sữa tươi đá xay](tea_type)
+      - [nước ép dưa hấu](tea_type)
+      - [trà xanh vải](tea_type)
+      - [sinh tố việt quất](tea_type)
+      - [cà phê sữa đá xay](tea_type)
+      - [nước ép cà chua](tea_type)
+      - [trà bí đao](tea_type)
+      - [sữa chua trái cây](tea_type)
+      - [nước tắc](tea_type)
+      - [sinh tố dưa hấu](tea_type)
+      - [cà phê đen đá](tea_type)
+      - [trà gừng đá](tea_type)
+      - [sữa chua mít](tea_type)
+      - [nước cam ép táo](tea_type)
+      - [sinh tố táo](tea_type)
+      - [cà phê sữa bạc hà](tea_type)
+      - [trà đen macchiato](tea_type)
+      - [sữa chua matcha](tea_type)
+      - [nước ép cà rốt](tea_type)
+      - [trà sữa trân châu đường đen](tea_type)
+      - [sinh tố việt quất sữa tươi](tea_type)
+      - [nước chanh leo](tea_type)
+      - [cafe](tea_type)
+      - trà gì cũng được
+      - size [M](tea_size)
+      - size [L](tea_size)
+      - size [M](tea_size) ạ
+      - size [L](tea_size) nhé
+      - dạ size [M](tea_size) ạ
+      - size [L](tea_size) nha
+      - [L](tea_size)
+      - [M](tea_size)
+      - [L](tea_size) nha
+      - [M](tea_size) nhé
+      - [L](tea_size) ạ
+      - dạ [M](tea_size)
+      - size [L](tea_size) em nhé
+      - size [M](tea_size) bạn nhé
+      - cho mình [M](tea_size) bạn nhé
+      - mình muốn size [L](tea_size)
+      - size [vừa](tea_size)
+      - size [bé](tea_size)
+      - [tí](tea_size)
+      - [bự](tea_size)
+      - cho anh size [m](tea_size)
+      - cho anh size [l](tea_size)
+      - cho tao size [M](tea_size)
+      - cho em size [L](tea_size)
+      - size [nhỏ](tea_size)
+      - size [lớn](tea_size)
+      - size [nào cũng được](tea_size)
+      - size [lớn nhất](tea_size)
+      - size [nhỏ nhất](tea_size)
+      - size [bự nhất](tea_size)
+      - dạ size [m] ạ
+      - cho anh size [M](tea_size) em nhé
+      - size [m](tea_size) hoi
+      - size [l](tea_size) luôn
+      - [1](tea_quan) ly
+      - [2](tea_quan) ạ
+      - [3](tea_quan) nha
+      - [4](tea_quan) nhé
+      - [5](tea_quan)
+      - [6](tea_quan) ly
+      - [7](tea_quan) ly
+      - dạ [8](tea_quan) ly ạ
+      - [9](tea_quan) ly
+      - [10](tea_quan)
+      - [11](tea_quan) nhe
+      - cho mình [12](tea_quan) nha
+      - [13](tea_quan)
+      - lấy chị [14](tea_quan) ly nha
+      - [15](tea_quan)
+      - lấy tui [16](tea_quan) nhé
+      - [17](tea_quan)
+      - [18](tea_quan) nhá
+      - [19](tea_quan)
+      - dạ cho mình [20](tea_quan) ly ạ
+      - [21](tea_quan)
+      - dạ cho anh [22](tea_quan) ly nhé
+      - [23](tea_quan)
+      - cho tui [24](tea_quan) ly nhá
+      - vâng [25](tea_quan)
+      - vâng [26](tea_quan) ạ
+      - [27](tea_quan)
+      - [28](tea_quan)
+      - [29](tea_quan)
+      - [30](tea_quan)
+      - [31](tea_quan)
+      - [32](tea_quan)
+      - [33](tea_quan)
+      - [34](tea_quan)
+      - [35](tea_quan)
+      - [36](tea_quan)
+      - [37](tea_quan)
+      - [38](tea_quan)
+      - [39](tea_quan)
+      - [40](tea_quan)
+      - [41](tea_quan)
+      - [42](tea_quan)
+      - [43](tea_quan)
+      - [44](tea_quan)
+      - [45](tea_quan)
+      - [46](tea_quan)
+      - [47](tea_quan)
+      - [48](tea_quan)
+      - [49](tea_quan)
+      - [50](tea_quan)
+      - [51](tea_quan)
+      - [52](tea_quan)
+      - [53](tea_quan)
+      - [54](tea_quan)
+      - [55](tea_quan)
+      - [56](tea_quan)
+      - [57](tea_quan)
+      - [58](tea_quan)
+      - [59](tea_quan)
+      - [60](tea_quan)
+      - [61](tea_quan)
+      - [62](tea_quan)
+      - [63](tea_quan)
+      - [64](tea_quan)
+      - [65](tea_quan)
+      - [66](tea_quan)
+      - [67](tea_quan)
+      - [68](tea_quan)
+      - [69](tea_quan)
+      - [70](tea_quan)
+      - [71](tea_quan)
+      - [72](tea_quan)
+      - [73](tea_quan)
+      - [74](tea_quan)
+      - [75](tea_quan)
+      - [76](tea_quan)
+      - [77](tea_quan)
+      - [78](tea_quan)
+      - [79](tea_quan)
+      - [80](tea_quan)
+      - [81](tea_quan)
+      - [82](tea_quan)
+      - [83](tea_quan)
+      - [84](tea_quan)
+      - [85](tea_quan)
+      - [86](tea_quan)
+      - [87](tea_quan)
+      - [88](tea_quan)
+      - [89](tea_quan)
+      - [90](tea_quan)
+      - [91](tea_quan)
+      - [92](tea_quan)
+      - [93](tea_quan)
+      - [94](tea_quan)
+      - [95](tea_quan)
+      - [96](tea_quan)
+      - [97](tea_quan)
+      - [98](tea_quan)
+      - [99](tea_quan)
+      - [100](tea_quan)
+      - [101](tea_quan)
+      - [102](tea_quan)
+      - [103](tea_quan)
+      - [104](tea_quan)
+      - [105](tea_quan)
+      - [106](tea_quan)
+      - [107](tea_quan)
+      - [108](tea_quan)
+      - [109](tea_quan)
+      - [110](tea_quan)
+      - [111](tea_quan)
+      - [112](tea_quan)
+      - [113](tea_quan)
+      - [114](tea_quan)
+      - [115](tea_quan)
+      - [116](tea_quan)
+      - [117](tea_quan)
+      - [118](tea_quan)
+      - [119](tea_quan)
+      - [120](tea_quan)
+      - [121](tea_quan)
+      - [122](tea_quan)
+      - [123](tea_quan)
+      - [124](tea_quan)
+      - [125](tea_quan)
+      - [126](tea_quan)
+      - [127](tea_quan)
+      - [128](tea_quan)
+      - [129](tea_quan)
+      - [130](tea_quan)
+      - [131](tea_quan)
+      - [132](tea_quan)
+      - [133](tea_quan)
+      - [134](tea_quan)
+      - [135](tea_quan)
+      - [136](tea_quan)
+      - [137](tea_quan)
+      - [138](tea_quan)
+      - [139](tea_quan)
+      - [140](tea_quan)
+      - [141](tea_quan)
+      - [142](tea_quan)
+      - [143](tea_quan)
+      - [144](tea_quan)
+      - [145](tea_quan)
+      - [146](tea_quan)
+      - [147](tea_quan)
+      - [148](tea_quan)
+      - [149](tea_quan)
+      - [150](tea_quan)
+      - [151](tea_quan)
+      - [152](tea_quan)
+      - [153](tea_quan)
+      - [154](tea_quan)
+      - [155](tea_quan)
+      - [156](tea_quan)
+      - [157](tea_quan)
+      - [158](tea_quan)
+      - [159](tea_quan)
+      - [160](tea_quan)
+      - [161](tea_quan)
+      - [162](tea_quan)
+      - [163](tea_quan)
+      - [164](tea_quan)
+      - [165](tea_quan)
+      - [166](tea_quan)
+      - [167](tea_quan)
+      - [168](tea_quan)
+      - [169](tea_quan)
+      - [170](tea_quan)
+      - [171](tea_quan)
+      - [172](tea_quan)
+      - [173](tea_quan)
+      - [174](tea_quan)
+      - [175](tea_quan)
+      - [176](tea_quan)
+      - [177](tea_quan)
+      - [178](tea_quan)
+      - [179](tea_quan)
+      - [180](tea_quan)
+      - [181](tea_quan)
+      - [182](tea_quan)
+      - [183](tea_quan)
+      - [184](tea_quan)
+      - [185](tea_quan)
+      - [186](tea_quan)
+      - [187](tea_quan)
+      - [188](tea_quan)
+      - [189](tea_quan)
+      - [190](tea_quan)
+      - [191](tea_quan)
+      - [192](tea_quan)
+      - [193](tea_quan)
+      - [194](tea_quan)
+      - [195](tea_quan)
+      - [196](tea_quan)
+      - [197](tea_quan)
+      - [198](tea_quan)
+      - [199](tea_quan)
+      - [200](tea_quan)
+      - [một](tea_quan)
+      - [hai](tea_quan)
+      - [ba](tea_quan) ly
+      - [bốn](tea_quan) ly
+      - [năm](tea_quan) ly
+      - [sáu](tea_quan) ly
+      - [bảy](tea_quan) ly
+      - [tám](tea_quan) ly
+      - [chín](tea_quan) ly
+      - [mười](tea_quan)
+      - [mười một](tea_quan)
+      - [mười hai](tea_quan) ly
+      - [mười ba](tea_quan)
+      - [mười bốn](tea_quan) ly
+      - [mười lăm](tea_quan)
+      - [mười sáu](tea_quan)
+      - [mười bảy](tea_quan) ly
+      - [mười tám](tea_quan) ly
+      - [mười chín](tea_quan)
+      - [hai mươi](tea_quan) ly
+      - cho anh [ba](tea_quan)
+      - cho mình [một trăm](tea_quan) ly
+      - chị muốn [3 trăm](tea_quan) ly
+      - dạ [38](tea_quan) ạ
+      - mình tên là [Trần Thái Đăng](user_name)
+      - [Trần Thái Đăng](user_name)
+      - tên của mình là [Nguyễn Thị Thúy Liễu](user_name)
+      - tên [Phạm Nguyễn Gia Bảo](user_name)
+      - tên [Đăng](user_name)
+      - tên là [Bích Như](user_name)
+      - dạ em tên là [Phương Uyên](user_name)
+      - dạ em tên là [Thúy Liễu](user_name) ạ
+      - tên [Thanh Tùng](user_name)
+      - anh tên [Hào](user_name)
+      - dạ [Phan Thị Mỹ Ngân](user_name) ạ
+      - dạ [Bình Trọng](user_name) ạ
+      - dạ mình tên là [Ngô Thị Thùy Dung](user_name)
+      - chị tên là [Như Ngọc](user_name)
+      - em tên là [Trung Tín](user_name)
+      - tao là [Thiên](user_name)
+      - tên của tao là [Trần Thị Huyền](user_name)
+      - mình tên [Bảo](user_name)
+      - tôi tên [Trần Như Sơn](user_name)
+      - tên của tôi là [Tiền Trương Nhị Thuyên](user_name)
+      - tao là [Nguyễn Tín](user_name) nè
+      - tên của tao là [Nguyễn Trung Tín](user_name)
+      - mình tên [Nguyễn Tấn Đạt](user_name) nè
+      - [Ngô Xuân Tùng](user_name)
+      - [Bùi Dương Thảo Vy](user_name)
+      - [Lưu Thế Huy](user_name)
+      - [Nguyễn Thị Vân](user_name) 
+      - [Dương Minh Long](user_name)
+      - [Trần Mai Khanh](user_name)
+      - [Nguyễn Thị Hồng Diệp](user_name)
+      - [Nguyễn Hoàng Khang](user_name)
+      - [Thi Ngọc Thái](user_name)
+      - [Nguyễn Anh Huy](user_name)
+      - [Nguyễn Mai Tường Vy](user_name)
+      - [Nguyễn Minh Nhật](user_name)
+      - [Lê Trúc Quỳnh](user_name)
+      - [Ngô Minh Đức](user_name)
+      - [Hoàng Ngọc Tấn](user_name)
+      - [Đào Minh Hiếu](user_name)
+      - [Thạch Thị Kim Yến](user_name)
+      - [Võ Thị Thanh](user_name)
+      - [Phạm Thị Lệ Chi](user_name)
+      - [Đỗ Tấn Nghĩa](user_name)
+      - [Đinh Kim Dân](user_name)
+      - [Huỳnh Lý Minh Chương](user_name)
+      - [Lương Thị Việt](user_name)
+      - [Đinh Xuân Việt](user_name)
+      - [Bùi Đức Mạnh](user_name)
+      - [Nguyễn Thị Yến Nhi](user_name)
+      - [Nguyễn Quốc Khánh](user_name)
+      - [TrỊnh Nhật Huy](user_name)
+      - [Bùi Đức Trung](user_name)
+      - [Trần Huỳnh Tiến Đạt](user_name)
+      - [Nguyễn Ngọc Thế Bão](user_name)
+      - [Nguyễn Hà Hải Yến](user_name)
+      - [Trần Nhật Thắng](user_name)
+      - [Châu Sắc Ly](user_name)
+      - [Nguyễn Thanh Trúc](user_name)
+      - [Nguyễn Hoàng Trường Thành](user_name)
+      - [Lương Đăng Phúc](user_name)
+      - [Tô Ngọc Thiên Phú](user_name)
+      - [Trần Quốc Huy](user_name)
+      - [Võ Hoàng Ánh](user_name)
+      - [Phạm Tuyên](user_name)
+      - [Huỳnh Tấn Quốc Hùng](user_name)
+      - [Đoàn Đỗ Lệ Quyên](user_name)
+      - [Nguyễn Hoàng Thu Ngân](user_name)
+      - [Hoàng Ngọc Bá Thi](user_name)
+      - [Phạm Quốc Duy Hưng](user_name)
+      - [Đỗ Anh Quốc](user_name)
+      - [Nguyễn Văn Giàu](user_name)
+      - [Tạ Triệu Duy](user_name)
+      - [Nguyễn Hoài Nhớ Nhung](user_name)
+      - [Nguyễn Tấn Phát](user_name)
+      - [Trần Thị Thu Nga](user_name)
+      - [Cao Thị Bích Ngọc](user_name)
+      - [Trần Minh Chiến](user_name)
+      - [Trần Công Định](user_name)
+      - [Nguyễn Văn Hiếu](user_name)
+      - [Trần Gia Lâm](user_name)
+      - [Bùi Quốc Việt](user_name)
+      - [Phạm Ngọc Huỳnh Long](user_name)
+      - [Nguyễn Đức Phùng](user_name)
+      - [Nguyễn Thị Hương Hoa](user_name)
+      - [Trương Nguyễn Quế Trân](user_name)
+      - [Bùi Việt Vương](user_name)
+      - [Phạm Thanh Hữu](user_name)
+      - [Cao Bá Kiệt](user_name)
+      - [Trần Duy Tân](user_name)
+      - [Trần Ngọc Hân](user_name)
+      - [Nguyễn Thị Quế Trân](user_name)
+      - [Trần Lê Minh](user_name)
+      - [Phan Phi Hải](user_name)
+      - [Phan Mỹ Hân](user_name)
+      - [Nguyễn Văn Tuyến](user_name)
+      - [Đào Trung Nguyên](user_name)
+      - [Trương Văn Thức](user_name)
+      - [Hà Thị Tuyết Trinh](user_name)
+      - [Bùi Thị Cẩm Nhung](user_name)
+      - [Trần Thiện Trong](user_name)
+      - [Nguyễn Thị Ngọc Dung](user_name)
+      - [Võ Hoàng Long](user_name)
+      - [Trần Hải Nam](user_name)
+      - [Bùi Thị Thu Thảo](user_name)
+      - [Trần Thị Trung Kiên](user_name)
+      - [Nguyễn Ngọc Vinh](user_name)
+      - [Võ Thị Kim Cúc](user_name)
+      - [Đặng Võ Phong](user_name)
+      - [Lâm Gia Huy](user_name)
+      - [Phan Nguyễn Phương Uyên](user_name)
+      - [Nguyễn Khắc Hải](user_name)
+      - [Trần Danh Thắng](user_name)
+      - [Nguyễn Thanh Quang](user_name)
+      - [Trương Thế Vinh](user_name)
+      - [Lê Phạm Kiều Anh](user_name)
+      - [Nguyễn Yến Nhi](user_name)
+      - [Nguyễn Thị Xương](user_name)
+      - [Nguyễn Văn Minh](user_name)
+      - [Hồ Văn Kỳ Thiên](user_name)
+      - [Tạ Thanh Tiên](user_name)
+      - [Lê Nguyễn Trúc Ly](user_name)
+      - [Ngô Thị Thùy Duyên](user_name)
+      - [Đỗ Thị Phương Thảo](user_name)
+      - [Nguyễn Thanh Nam](user_name)
+      - [Dương Tuyết Ngân](user_name)
+      - [Lê Thị Ngọc](user_name)
+      - [Nguyễn Hoàng Sơn](user_name)
+      - [Nguyễn Thị Xuân Ngọc](user_name)
+      - [Trịnh Minh Tân](user_name)
+      - [Nguyễn Đức Thắng](user_name)
+      - [Nguyễn Thị Bảo Trân](user_name)
+      - [Lê Ngọc Ánh](user_name)
+      - [Nguyễn Tường Vi](user_name)
+      - [Trần Ngọc Minh Trâm](user_name)
+      - [Lại Văn Thanh](user_name)
+      - [Nguyễn Thanh Trọng](user_name)
+      - [Lữ Thị Dịu Thoa](user_name)
+      - [Nguyễn Văn Nghĩa](user_name)
+      - [Trần Thị Thảo](user_name)
+      - [Nguyễn Thị Mỹ Linh](user_name)
+      - [Huỳnh Nhật Bảo](user_name)
+      - [Nguyễn Thanh Phong](user_name)
+      - [Đỗ Thị Phương Hoa](user_name)
+      - [Huỳnh Thanh Trí](user_name)
+      - [Ngô Thiên Nghĩa](user_name)
+      - [Trần Văn Vinh](user_name)
+      - [Nguyễn Xuân Viên](user_name)
+      - [Trần Thị Hồng Thương](user_name)
+      - [Đinh Thị Luyến](user_name)
+      - [Châu Chí Cường](user_name)
+      - [Nguyễn Thị Thúy Vy](user_name)
+      - [Nguyễn Hoàng Vĩ](user_name)
+      - [Nguyễn Bích Trâm](user_name)
+      - [Đàng Quốc Sỹ Mlô](user_name)
+      - [Nguyễn Thị Thanh Phương](user_name)
+      - [Bùi Thị Thu Thảo](user_name)
+      - [Đặng Đình Vỵ](user_name)
+      - [Nguyễn Hoàng Sang](user_name)
+      - [Trần Thị Kim Thoa](user_name)
+      - [Trương Hoàng Việt](user_name)
+      - [Phan KhẮc Hậu](user_name)
+      - [Lê Đăng Khôi](user_name)
+      - [Lê Thị Thanh](user_name)
+      - [KiềuThị Phượng](user_name)
+      - [Diệp Thanh Phúc](user_name)
+      - [Trần Tuấn Vĩ](user_name)
+      - [Bùi Nữ Duyên Duyên](user_name)
+      - [Trần Huỳnh Xuân Thảo](user_name)
+      - [Nguyễn Thị Nhi](user_name)
+      - [Huỳnh Thị Kim Thoa](user_name)
+      - [Nguyễn Thị Thanh Thúy](user_name)
+      - [Đoàn Thị Tuyết Mai](user_name)
+      - [Võ Đình Thảo](user_name)
+      - [Lê Quốc Hào](user_name)
+      - [Nguyễn Tấn Phát](user_name)
+      - [Nguyễn Trần Minh Thư](user_name)
+      - [Bùi Tấn Phúc](user_name)
+      - [Nguyễn Trà Kha](user_name)
+      - [Trương Huỳnh Quý](user_name)
+      - [Phạm Ngọc Ánh](user_name)
+      - [Nguyễn Lê Thanh](user_name)
+      - [Lê Thị Phúc](user_name)
+      - [Trương Nguyệt Hoàng Hạ](user_name)
+      - [Đỗ Lê Hạnh Trang](user_name)
+      - [Nguyễn Đình Cường](user_name)
+      - [Tôn Thị Yến Khoa](user_name)
+      - [Phạm Văn Duy](user_name)
+      - [Nguyễn Thiên Hưng](user_name)
+      - [Nguyễn Bá Phước](user_name)
+      - [Lý Nguyễn Phương Anh](user_name)
+      - [Nguyễn Thị Tuyết Sa](user_name)
+      - [Phạm Hoàng Quốc Anh](user_name)
+      - [Văn Đình Quốc](user_name)
+      - [Nguyễn Lê Vĩnh Tường](user_name)
+      - [Nguyễn Thị Thành](user_name)
+      - [Nguyễn Gia Huấn](user_name)
+      - [Nguyễn Thị Thủy Tiên](user_name)
+      - [Phạm Xuân Vinh](user_name)
+      - [Trần Quang Linh](user_name)
+      - [Bùi Trần Thảo Vy](user_name)
+      - [Nguyễn Thành Nhân](user_name)
+      - [Nguyễn Thiên Long](user_name)
+      - [Lê Phú Công Lý](user_name)
+      - [Nguyễn Bá Khánh](user_name)
+      - [Nguyễn Minh Tiến](user_name)
+      - [Phạm Gia Long](user_name)
+      - [Huỳnh Hoàng Gia](user_name)
+      - [Phan Văn Tuế](user_name)
+      - [Lê Quang Thìn](user_name)
+      - [Trần Thị Hương Quỳnh](user_name)
+      - [Nguyễn Tạ Vân Anh](user_name)
+      - [Nguyễn Thị Yến Nhi](user_name)
+      - [Bùi Thị Kim Quyên](user_name)
+      - [Nguyễn Thụy Thái Trân](user_name)
+      - [Trần Anh Tuấn](user_name)
+      - [Phan Hồng Gia Hân](user_name)
+      - [Hoàng Thị Thanh](user_name)
+      - [Huỳnh Dương Đức Toàn](user_name)
+      - [Ngô Giang Phi](user_name)
+      - [Tống Khánh Linh](user_name)
+      - [Võ Đức Thịnh](user_name)
+      - [Nguyễn Thanh Sơn](user_name)
+      - [Đinh Trung Nghĩa](user_name)
+      - [A PHỈNH](user_name)
+      - [Nguyễn Văn Thuật](user_name)
+      - [Đoàn Thị Liên](user_name)
+      - [Trần Trung Thảo](user_name)
+      - [Vũ Gia Khiêm](user_name)
+      - [Võ Phước Thọ](user_name)
+      - [Đoàn Xuân Bắc](user_name)
+      - [Nguyễn Thu Nga](user_name)
+      - [Nguyễn Đức Hiếu](user_name)
+      - [Nguyễn Thị Mỹ Hương](user_name)
+      - [Võ Hoàng Yến Oanh](user_name)
+      - [Phan Ngọc Phương Nhi](user_name)
+      - [Nguyễn Thị Thùy Vân](user_name)
+      - [Nguyễn Quang Sang](user_name)
+      - [Nguyễn Việt Hà](user_name)
+      - [Võ Thị Thúy An](user_name)
+      - [Nguyễn Thị Hằng](user_name)
+      - [Lê Ngọc Bảo](user_name)
+      - [Trần Minh Quân](user_name)
+      - [Phạm Thị Mỹ Dung](user_name)
+      - [Võ Khắc Hoàn Nhân](user_name)
+      - [Trần Đức Cương](user_name)
+      - [Hồ Đình Hiệp](user_name)
+      - [Lê Thành Tính](user_name)
+      - [Trần Thành Trí](user_name)
+      - [Nguyễn Thị Thu Thủy](user_name)
+      - [Phạm Mai Dung](user_name)
+      - [Nguyễn Thị Thúy Phượng](user_name)
+      - [Nguyễn Thanh Tồn](user_name)
+      - [Cao Trần Quỳnh Như](user_name)
+      - [Nguyễn Thúy Hiền](user_name)
+      - [Nguyễn Bá Văn](user_name)
+      - [Bùi Thanh Thủy](user_name)
+      - [Huỳnh Ngọc Thanh Thư](user_name)
+      - [Phan Khắc Cường](user_name)
+      - [Nguyễn Đức Huỳnh Thanh Lâm](user_name)
+      - [Nguyễn Ngọc Mỹ](user_name)
+      - [Nguyễn Công Tố](user_name)
+      - [Hàng Anh Quốc](user_name)
+      - [Trình Thị Phương Thảo](user_name)
+      - [Hoàng Minh Tú](user_name)
+      - [Nguyễn Thị Cúc](user_name)
+      - [Nguyễn Tấn Phát](user_name)
+      - [Lê Thị Ánh Minh](user_name)
+      - [Nguyễn Thị Tuyết Nhung](user_name)
+      - [Ngô Thanh Phong](user_name)
+      - [Lê Tha nh Tâm](user_name)
+      - [Nguyễn Lê Tường Vy](user_name)
+      - [Huỳnh Thị Lý](user_name)
+      - [Bùi Thị Thanh Trình](user_name)
+      - [Trần Kim Lộc](user_name)
+      - [Hồ Thị Kim Thùy](user_name)
+      - [Vũ Công Toàn](user_name)
+      - [Nguyễn Lâm Thảo Vy](user_name)
+      - [Vũ Như Phương](user_name)
+      - [Trịnh Gia Thanh](user_name)
+      - [Nguyễn Mậu Thiết](user_name)
+      - tên [An](user_name)
+      - tên [Anh](user_name)
+      - tên [Ban](user_name)
+      - tên [Bình](user_name)
+      - tên [Bích](user_name)
+      - tên [Băng](user_name)
+      - tên [Bạch](user_name)
+      - tên [Bảo](user_name)
+      - tên [Bằng](user_name)
+      - tên [Bội](user_name)
+      - tên [Ca](user_name)
+      - tên [Cam](user_name)
+      - tên [Chi](user_name)
+      - tên [Chinh](user_name)
+      - tên [Chiêu](user_name)
+      - tên [Chung](user_name)
+      - tên [Châu](user_name)
+      - tên [Cát](user_name)
+      - tên [Cúc](user_name)
+      - tên [Cương](user_name)
+      - tên [Cầm](user_name)
+      - tên [Cẩm](user_name)
+      - tên [Dao](user_name)
+      - tên [Di](user_name)
+      - tên [Diên](user_name)
+      - tên [Diễm](user_name)
+      - tên [Diệp](user_name)
+      - tên [Diệu](user_name)
+      - tên [Du](user_name)
+      - tên [Dung](user_name)
+      - tên [Duy](user_name)
+      - tên [Duyên](user_name)
+      - tên [Dân](user_name)
+      - tên [Dã](user_name)
+      - tên [Dương](user_name)
+      - tên [Dạ](user_name)
+      - tên [Gia](user_name)
+      - tên [Giang](user_name)
+      - tên [Giao](user_name)
+      - tên [Giáng](user_name)
+      - tên [Hiếu](user_name)
+      - tên [Hiền](user_name)
+      - tên [Hiểu](user_name)
+      - tên [Hiệp](user_name)
+      - tên [Hoa](user_name)
+      - tên [Hoan](user_name)
+      - tên [Hoài](user_name)
+      - tên [Hoàn](user_name)
+      - tên [Hoàng](user_name)
+      - tên [Hoạ](user_name)
+      - tên [Huyền](user_name)
+      - tên [Huệ](user_name)
+      - tên [Huỳnh](user_name)
+      - tên [Hà](user_name)
+      - tên [Hàm](user_name)
+      - tên [Hân](user_name)
+      - tên [Hòa](user_name)
+      - tên [Hương](user_name)
+      - tên [Hướng](user_name)
+      - tên [Hường](user_name)
+      - tên [Hưởng](user_name)
+      - tên [Hạ](user_name)
+      - tên [Hạc](user_name)
+      - tên [Hạnh](user_name)
+      - tên [Hải](user_name)
+      - tên [Hảo](user_name)
+      - tên [Hậu](user_name)
+      - tên [Hằng](user_name)
+      - tên [Họa](user_name)
+      - tên [Hồ](user_name)
+      - tên [Hồng](user_name)
+      - tên [Hợp](user_name)
+      - tên [Khai](user_name)
+      - tên [Khanh](user_name)
+      - tên [Khiết](user_name)
+      - tên [Khuyên](user_name)
+      - tên [Khuê](user_name)
+      - tên [Khánh](user_name)
+      - tên [Khê](user_name)
+      - tên [Khôi](user_name)
+      - tên [Khúc](user_name)
+      - tên [Khả](user_name)
+      - tên [Khải](user_name)
+      - tên [Kim](user_name)
+      - tên [Kiết](user_name)
+      - tên [Kiều](user_name)
+      - tên [Kê](user_name)
+      - tên [Kỳ](user_name)
+      - tên [Lam](user_name)
+      - tên [Lan](user_name)
+      - tên [Linh](user_name)
+      - tên [Liên](user_name)
+      - tên [Liễu](user_name)
+      - tên [Loan](user_name)
+      - tên [Ly](user_name)
+      - tên [Lâm](user_name)
+      - tên [Lê](user_name)
+      - tên [Lý](user_name)
+      - tên [Lăng](user_name)
+      - tên [Lưu](user_name)
+      - tên [Lễ](user_name)
+      - tên [Lệ](user_name)
+      - tên [Lộc](user_name)
+      - tên [Lợi](user_name)
+      - tên [Lục](user_name)
+      - tên [Mai](user_name)
+      - tên [Mi](user_name)
+      - tên [Minh](user_name)
+      - tên [Miên](user_name)
+      - tên [My](user_name)
+      - tên [Mẫn](user_name)
+      - tên [Mậu](user_name)
+      - tên [Mộc](user_name)
+      - tên [Mộng](user_name)
+      - tên [Mỹ](user_name)
+      - tên [Kiều](user_name)
+      - tên [Nga](user_name)
+      - tên [Nghi](user_name)
+      - tên [Nguyên](user_name)
+      - tên [Nguyết](user_name)
+      - tên [Nguyệt](user_name)
+      - tên [Ngà](user_name)
+      - tên [Ngân](user_name)
+      - tên [Ngôn](user_name)
+      - tên [Ngọc](user_name)
+      - tên [Thành Châu](user_name)
+      - tên [Thành Công](user_name)
+      - tên [Thành Danh](user_name)
+      - tên [Thanh Ðạo](user_name)
+      - tên [Thành Ðạt](user_name)
+      - tên [Thành Ðệ](user_name)
+      - tên [Thanh Ðoàn](user_name)
+      - tên [Thành Doanh](user_name)
+      - tên [Thanh Hải](user_name)
+      - tên [Thanh Hào](user_name)
+      - tên [Thanh Hậu](user_name)
+      - tên [Thành Hòa](user_name)
+      - tên [Thanh Huy](user_name)
+      - tên [Thành Khiêm](user_name)
+      - tên [Thanh Kiên](user_name)
+      - tên [Thanh Liêm](user_name)
+      - tên [Thành Lợi](user_name)
+      - tên [Thanh Long](user_name)
+      - tên [Thành Long](user_name)
+      - tên [Thanh Minh](user_name)
+      - tên [Thành Nguyên](user_name)
+      - tên [Thành Nhân](user_name)
+      - tên [Thanh Phi](user_name)
+      - tên [Thanh Phong](user_name)
+      - tên [Thành Phương](user_name)
+      - tên [Thanh Quang](user_name)
+      - tên [Thành Sang](user_name)
+      - tên [Thanh Sơn](user_name)
+      - tên [Thanh Thế](user_name)
+      - tên [Thanh Thiên](user_name)
+      - tên [Thành Thiện](user_name)
+      - tên [Thanh Thuận](user_name)
+      - tên [Thành Tín](user_name)
+      - tên [Thanh Tịnh](user_name)
+      - tên [Thanh Toàn](user_name)
+      - tên [Thanh Toản](user_name)
+      - tên [Thanh Trung](user_name)
+      - tên [Thành Trung](user_name)
+      - tên [Thanh Tú](user_name)
+      - tên [Thanh Tuấn](user_name)
+      - tên [Thanh Tùng](user_name)
+      - tên [Thanh Việt](user_name)
+      - tên [Thanh Vinh](user_name)
+      - tên [Thành Vinh](user_name)
+      - tên [Thanh Vũ](user_name)
+      - tên [Thành Ý](user_name)
+      - tên [Thất Cương](user_name)
+      - tên [Thất Dũng](user_name)
+      - tên [Thất Thọ](user_name)
+      - tên [Thế An](user_name)
+      - tên [Thế Anh](user_name)
+      - tên [Thế Bình](user_name)
+      - tên [Thế Dân](user_name)
+      - tên [Thế Doanh](user_name)
+      - tên [Thế Dũng](user_name)
+      - tên [Thế Duyệt](user_name)
+      - tên [Thế Huấn](user_name)
+      - tên [Thế Hùng](user_name)
+      - tên [Thế Lâm](user_name)
+      - tên [Thế Lực](user_name)
+      - tên [Thế Minh](user_name)
+      - tên [Thế Năng](user_name)
+      - tên [Thế Phúc](user_name)
+      - tên [Thế Phương](user_name)
+      - tên [Thế Quyền](user_name)
+      - tên [Thế Sơn](user_name)
+      - tên [Thế Trung](user_name)
+      - tên [Thế Tường](user_name)
+      - tên [Thế Vinh](user_name)
+      - tên [Thiên An](user_name)
+      - tên [Thiên Ân](user_name)
+      - tên [Thiện Ân](user_name)
+      - tên [Thiên Bửu](user_name)
+      - tên [Thiên Ðức](user_name)
+      - tên [Thiện Ðức](user_name)
+      - tên [Thiện Dũng](user_name)
+      - tên [Thiện Giang](user_name)
+      - tên [Thiên Hưng](user_name)
+      - tên [Thiện Khiêm](user_name)
+      - tên [Thiên Lạc](user_name)
+      - tên [Thiện Luân](user_name)
+      - tên [Thiên Lương](user_name)
+      - tên [Thiện Lương](user_name)
+      - tên [Thiên Mạnh](user_name)
+      - tên [Thiện Minh](user_name)
+      - tên [Thiện Ngôn](user_name)
+      - tên [Thiên Phú](user_name)
+      - tên [Thiện Phước](user_name)
+      - tên [Thiện Sinh](user_name)
+      - tên [Thiện Tâm](user_name)
+      - tên [Thiện Thanh](user_name)
+      - tên [Thiện Tính](user_name)
+      - tên [Thiên Trí](user_name)
+      - tên [Thiếu Anh](user_name)
+      - tên [Thiệu Bảo](user_name)
+      - tên [Thiếu Cường](user_name)
+      - tên [Thịnh Cường](user_name)
+      - tên [Thời Nhiệm](user_name)
+      - tên [Thông Ðạt](user_name)
+      - tên [Thông Minh](user_name)
+      - tên [Thống Nhất](user_name)
+      - tên [Thông Tuệ](user_name)
+      - tên [Thụ Nhân](user_name)
+      - tên [Thu Sinh](user_name)
+      - tên [Thuận Anh](user_name)
+      - tên [Thuận Hòa](user_name)
+      - tên [Thuận Phong](user_name)
+      - tên [Ninh Kiều](user_name)
+      - dạ mình ở số [239](house_num), [đường Tạ Thị Phi](street), phường [Long Tiền](ward), quận [Bình Thủy](district)
+      - giao cho mình tại [29/C2](house_num), [khu dân cư tổ 3A](department), phường [An Bình](ward), quận [Ninh Kiều](district)
+      - ở số [8](house_num), [đường số 7](street), [khu tái định cư Thới Nhựt 2](department), phường [An Khánh](ward), quận [Ninh Kiều](district)
+      - địa chỉ là [209C](house_num), [hẻm 49](department), [đường Trần Hoàng Na](street), phường [Hưng Lợi](ward), quận [Ninh Kiều](district)
+      - mình ở tại [182](house_num) [Tầm Vu](street), [Ninh Kiều](district), [Cần Thơ](city)
+      - [500](house_num) [đường 30 Tháng 4](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [đường Ngô Đức Kế](street), [Tân An](ward)
+      - [100](house_num) [Quang Trung](street), [Hưng Phú](ward), [Cái Răng](district), 
+      - [Hẻm 132](department) [Ba Tháng Hai](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - số [228](house_num), [đường 3/2](street), [Hưng Lợi](ward), 
+      - [307H](house_num), [đường Nguyễn Văn Linh](street), Phường [An Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - số [163e](house_num), [đường Nguyễn Văn Cừ nối dài](street), Phường [An Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [171](house_num), [Đường số 24](street), [An Hoà](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [84](house_num), [đường Mậu Thân](street), [An Hoà](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [34-36](house_num) [Đường A8](street), [KDC Hưng Phú 1](department), [Cái Răng](district), [Cần Thơ](city)
+      - [135](house_num), [Khu Vực Hòa An](department), Phường [Thới Hòa](ward), [Cái Răng](district), 
+      - số [168](house_num) [Đường Song Hành](street), [QL1A Khu Vực 5](department), [Hưng Thành](ward), [Cái Răng](district), [Cần Thơ](city)
+      - [Hẻm 195](department) [đường 3 Tháng 2](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [18g](house_num) [Hẻm 51](department), Phường [An Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [109](house_num) [Trần Văn Khéo](street), [Cái Khế](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [97](house_num) [Nguyễn Trãi](street) Phường [Tân An](ward) Can Tho City
+      - [127](house_num) [Nguyễn Trãi](street), [Tân An](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [Hoàng Văn Thụ](street), (An Hội)(ward), [Ninh Kiều](district), 
+      - [24](house_num) [Hùng Vương](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [54/1](house_num) [Hùng Vương](street), [An Hội](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [35](house_num) [đường Phạm Ngũ Lão](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [24](house_num) [đường Trần Việt Châu](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [54/34](house_num) [đường Trần Việt Châu](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [146G](house_num) [đường Trần Văn Hoài](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [1/3D](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [279](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [9B](house_num) [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [162/18](house_num), [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [172C](house_num) [Ba Tháng Hai](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [290](street) [đường Lê Bình](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [Hẻm 290/27](department), [đường Lê Bình](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [213](house_num) [đường Nguyễn Văn Linh](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [190](house_num) [đường 30 Tháng 4](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [188C](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [45](house_num) [Quang Trung](street), [An Lạc](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [19A](house_num) [Đại lộ Hoà Bình](street), [Tân An](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [37](house_num) [đường Đề Thám](street), [Tân An](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [138A](house_num) [Đường Nguyễn An Ninh](street), [Tân An](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [42](house_num) [đường Phan Văn Trị](street), [An Lạc](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [64-64A](house_num) [đường Lý Tự Trọng](street), [An Cư](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - số [65/15A](house_num) [đường Trần Hưng Đạo](street), [An Cư](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [45/36c](house_num) [đường Huỳnh Thúc Kháng](street), [An Nghiệp](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [89/4](house_num) [đường Huỳnh Thúc Kháng](street), [An Nghiệp](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [126A](house_num) [đường Lê Anh Xuân](street), [An Nghiệp](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [34](house_num) [đường Cách Mạng Tháng 8](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [77c](house_num) [Trần Phú](street), [Cái Khế](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [hẻm 9](department) [Phạm Ngọc Hưng](street) [An Hòa](ward)
+      - [25AA](house_num) [Nguyễn Văn Cừ nối dài](street), [An Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [6/46](house_num) [đường Mạc Thiên Tích](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [124/18](house_num) [đường 3/2](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - Số [2A3](house_num), [Hẻm 3T2](department), [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [352](house_num), [Hẻm 139](department) [30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [251/38A] [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [16](house_num) [Quang Trung](street), [Hưng Phú](ward), [Cái Răng](district), [Cần Thơ](city)
+      - [K2](house_num) [đường Số 2](street), [Khu dân cư Nông Thổ Sản](department), [Cái Răng](district), [Cần Thơ](city)
+      - [55](house_num) [Nguyễn Thị Sáu](street), [Phú Thứ](ward), [Cái Răng](district), [Cần Thơ](city)
+      - [105](house_num) [Phạm Văn Nhờ](street), [Hưng Phú](ward), [Cái Răng](district), [Cần Thơ](city)
+      - [36](house_num) [Phạm Văn Nhờ](street), [Khu dân cư Vạn Phong](department), [Cái Răng](district), [Cần Thơ](city)
+      - [33](house_num) [đường Lê Văn Tưởng](street), [KDC 586](department), [Cái Răng](district), [Cần Thơ](city)
+      - số [66](house_num) [Đường Số 3](street), [An Bình](ward), [Bình Thủy](district), [Cần Thơ](city)
+      - [206](house_num) [Võ Văn Kiệt](street), [An Hoà](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [416/14](house_num) [đường F7](street), [Khu Dân Cư Bình Nhựt](department), [Bình Thủy](district), [Cần Thơ](city), Việt Nam
+      - [đường B4](street) [khu dân cư 91B](department)
+      - [10](house_num) [Trần Đại Nghĩa](street)
+      - [45](house_num) [Xô Viết Nghệ Tĩnh](street)
+      - [DH7](house_num) [Vũ Đình Liệu](street), [KDC Nam Long](department)
+      - [51A9A](house_num) [Trần Nam Phú](street)
+      - [Đinh Công Chánh](street), Q [Bình Thuỷ](district), TP [Cần Thơ](city)
+      - [131](house_num) [Lý Tự Trọng](street)
+      - [1911](house_num) [Võ Văn Kiệt](street)
+      - [58 - 60](house_num) [Trần Bạch Đằng](street), P [An Khánh](ward)
+      - [Y58](house_num) [đường số 10](street) [KDC Hưng Phú](department)
+      - [38A](house_num) [Xô Viết Nghệ Tĩnh](street), P [An Cư](ward)
+      - [11/9](house_num) [Trần Bình Trọng](street)
+      - [102/18](house_num) [Lê Lai](street)
+      - [49](house_num) [đường 3.2](street)
+      - [172/16B](house_num) [Lê Bình](street)
+      - [98](house_num) [Trần Văn Khéo](street)
+      - [163e](house_num) [Nguyễn Văn Cừ](street)
+      - [17](house_num) [Hải Thượng Lãn Ông](street)
+      - [12A](house_num) [Lê Anh Xuân](street)
+      - [79/21C](house_num), [Hùng Vương](street)
+      - [A3](house_num) [KDC 923](department) [Cái Răng](district)
+      - [Đại lộ Hoà Bình](street)
+      - [42](house_num) [Phạm Ngọc Thạch](street)
+      - [150 - 152](house_num), [Đường Cách Mạng Tháng Tám](street)
+      - [228](house_num) [Trần Hưng Đạo](street)
+      - [172/16B](house_num) [Lê Bình](street)
+      - [40](house_num) [Trần Văn Hoài](street)
+      - số [71/29C](house_num) [Hùng Vương](street)
+      - [1/27](house_num) [Phan Văn Trị](street)
+      - [54/2C](house_num) [Hùng Vương](street)
+      - [85-87](house_num) [Trương Định](street)
+      - [142](house_num) [Huỳnh Cương](street)
+      - [95/1A](house_num) [Mậu Thân](street)
+      - [38A](house_num) [Xô Viết Nghệ Tĩnh](street)
+      - [162C](house_num) [Trần Ngọc Quế](street)
+      - [43](house_num) [Võ Văn Kiệt](street)
+      - [10](house_num) [Trần Đại Nghĩa](street)
+      - [51A9A](house_num) [Trần Nam Phú](street)
+      - [102/18](house_num) [Lê Lai](street)
+      - [48](house_num) [Xô Viết Nghệ Tĩnh](street)
+      - Số [17](house_num) [Đường Hải Thượng Lãng Ông](street), [Tân An](ward), [Ninh Kiều](district)
+      - [23](house_num) [Hai Bà Trưng](street)
+      - [0335459023](phone)
+      - số điện thoại của mình là [0984157024](phone)
+      - sđt của anh là [0325972907](phone)
+      - dạ [0775593955](phone) ạ
+      - [0913185605](phone) ạ
+      - sđt: [0788715459](phone)
+      - dạ là [0779877342](phone)
+      - số điện thoại của anh là [84867013904](phone)
+      - [84901470360](phone)
+      - [84935926816](phone)
+      - [+84970383272](phone)
+      - [+842047634504](phone)
+      - [+842082090960](phone)
+      - [842116547416](phone)
+      - [842151003872](phone)
+      - [842185460328](phone)
+      - [0341195192](phone)
+      - [0375651648](phone)
+      - [0582390384](phone)
+      - [0789129120](phone)
+      - [0823585576](phone)
+      - [0858042032](phone)
+      - [0892498488](phone)
+      - [0926954944](phone)
+      - [0961411400](phone)
+      - [0995867856](phone)
+      - [02064017992](phone)
+      - [02098474448](phone)
+      - [02132930904](phone)
+      - [02167387360](phone)
+      - [02201843816](phone)
+      - [02270756728](phone)
+      - [02339669640](phone)
+      - [02374126096](phone)
+      - [02408582552](phone)
+      - [02443039008](phone)
+      - [02477495464](phone)
+      - [024774954](phone)
+      - là [054734687](phone)
+      - [03436235](phone)
+  - regex: phone
+    examples: |
+      - \d{10,12}

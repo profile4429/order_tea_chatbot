@@ -1,0 +1,34 @@
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff !important;
+    background-color: #00acd6 !important;
+    border-color: #00acd6 !important;
+    border-radius: 50%;
+    padding: 8px 16px; /* Tăng kích thước của padding để nút trông đẹp hơn */
+}
+
+.page-link {
+    z-index: 3;
+    color: #00acd6 !important;
+    background-color: #fff;
+
+    border-radius: 50%;
+    padding: 8px 16px !important; /* Tăng kích thước của padding để nút trông đẹp hơn */
+}
+
+.page-item:first-child .page-link {
+    border-radius: 50% !important; /* Sửa lại giá trị của border-radius để nút trông đẹp hơn */
+}
+
+.page-item:last-child .page-link {
+    border-radius: 50% !important; /* Sửa lại giá trị của border-radius để nút trông đẹp hơn */
+}
+
+.pagination li {
+    padding: 3px;
+}
+
+.disabled .page-link {
+    color: #212529 !important;
+    opacity: 0.5 !important;
+}

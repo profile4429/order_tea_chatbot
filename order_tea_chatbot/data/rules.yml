@@ -1,0 +1,155 @@
+version: "3.1"
+
+rules:
+  - rule: Say goodbye anytime the user says goodbye
+    steps:
+    - intent: goodbye
+    - action: utter_say_goodbye
+
+  # - rule: Say 'I am a bot' anytime the user challenges
+  #   steps:
+  #   - intent: bot_challenge
+  #   - action: utter_iamabot
+  - rule: Activate Tea Form
+    steps:
+      - intent: buy_tea
+      - action: tea_form
+      - active_loop: tea_form
+
+  - rule: Submit Tea Form
+    condition:
+      - active_loop: tea_form
+    steps:
+      - action: tea_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: utter_tea_confirm
+      - action: utter_get_infor
+      - action: infor_form
+      - active_loop: infor_form
+
+  - rule: Submit Infor Form
+    condition:
+      - active_loop: infor_form
+    steps:
+      - action: infor_form
+      - active_loop: null
+      - slot_was_set:
+          - requested_slot: null
+      - action: action_return_invoice
+      - action: utter_confirm_invoice
+
+  - rule: accept invoice
+    steps:
+      - action: utter_confirm_invoice
+      - intent: affirm
+      - action: action_submit_invoice
+      - action: utter_thanks
+
+  - rule: deny invoice
+    steps:
+      - action: utter_confirm_invoice
+      - intent: deny
+      - action: action_cancel_invoice
+      - action: utter_sorry
+      - action: utter_goodbye
+
+  - rule: wanna stop tea form
+    condition:
+      - active_loop: tea_form
+    steps:
+      - intent: stop
+      - action: utter_ask_continue
+
+  - rule: wanna stop infor form
+    condition:
+      - active_loop: infor_form
+    steps:
+      - intent: stop
+      - action: utter_ask_continue
+
+  - rule: stop form tea form
+    steps:
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: action_deactivate_loop
+      - action: action_cancel_invoice
+      - action: utter_goodbye
+
+  - rule: stop form tea form 2
+    steps:
+      - action: utter_ask_continue
+      - intent: stop
+      - action: action_deactivate_loop
+      - action: action_cancel_invoice
+      - action: utter_goodbye
+
+  - rule: dont stop form tea form
+    steps:
+      - action: utter_ask_continue
+      - intent: deny
+      - action: utter_confirm_continue
+
+  - rule: stop form infor form
+    steps:
+      - action: utter_ask_continue
+      - intent: affirm
+      - action: action_deactivate_loop
+      - action: action_cancel_invoice
+      - action: utter_goodbye
+
+  - rule: stop form infor form 2
+    steps:
+      - action: utter_ask_continue
+      - intent: stop
+      - action: action_deactivate_loop
+      - action: action_cancel_invoice
+      - action: utter_goodbye
+
+  - rule: dont stop form infor form
+    steps:
+      - action: utter_ask_continue
+      - intent: deny
+      - action: utter_confirm_continue
+
+  - rule: ask_price
+    steps:
+      - intent: ask_price
+      - action: action_return_tea_price
+
+  - rule: inquire_tea_type
+    steps:
+      - intent: inquire_tea_type
+      - action: action_inquired_tea_type
+
+  - rule: greeting
+    steps:
+      - intent: greet
+      - action: utter_greet
+
+  - rule: answer_name
+    steps:
+      - intent: ask_name
+      - action: utter_ask_name
+
+  - rule: answer_menu
+    steps:
+      - intent: ask_menu
+      - action: utter_ask_menu
+      - action: action_return_menu
+
+  - rule: answer_function
+    steps:
+      - intent: ask_function
+      - action: utter_ask_function
+
+  - rule: answer_thanks
+    steps:
+      - intent: thanks
+      - action: utter_re_thanks
+
+  - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+    steps:
+      - intent: nlu_fallback
+      - action: utter_please_rephrase

@@ -1,0 +1,274 @@
+version: "3.1"
+
+intents:
+  - greet:
+      use_entities: []
+  - goodbye:
+      use_entities: []
+  - thanks:
+      use_entities: []
+  - affirm:
+      use_entities: []
+  - deny:
+      use_entities: []
+  - stop:
+      use_entities: []
+  - ask_menu:
+      use_entities: []
+  - ask_function:
+      use_entities: []
+  - ask_name:
+      use_entities: []
+  - buy_tea:
+      use_entities:
+        - tea_type
+        - tea_size
+        - tea_quan
+  - inform:
+      use_entities:
+        - tea_type
+        - tea_size
+        - tea_quan
+        - house_num
+        - department
+        - street
+        - ward
+        - district
+        - phone
+        - user_name
+
+  - request_tea_form
+  - request_infor_form
+  - ask_price:
+      use_entities:
+        - tea_type
+  - inquire_tea_type:
+      use_use_entities:
+        - tea_type
+
+entities:
+  - tea_type
+  - tea_size
+  - tea_quan
+  - user_name
+  - house_num
+  - department
+  - street
+  - ward
+  - district
+  - phone
+
+slots:
+  tea_size:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tea_size
+        intent:
+          - buy_tea
+          - inform
+  tea_type:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tea_type
+        intent:
+          - buy_tea
+          - inform
+  tea_quan:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tea_quan
+        intent:
+          - buy_tea
+          - inform
+  price_tea_type:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tea_type
+        intent: ask_price
+  inquired_tea_type:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: tea_type
+        intent: inquire_tea_type
+  phone:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: phone
+        intent: inform
+  user_name:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: user_name
+        intent: inform
+  house_num:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: house_num
+        intent: inform
+  department:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: department
+        intent: inform
+  street:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: street
+        intent: inform
+  ward:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: ward
+        intent: inform
+  district:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: district
+        intent: inform
+  address:
+    type: text
+    mappings:
+      - type: custom
+
+forms:
+  tea_form:
+    required_slots:
+      - tea_type
+      - tea_size
+      - tea_quan
+
+  infor_form:
+    required_slots:
+      - phone
+      - user_name
+      - street
+
+responses:
+  utter_greet:
+    - text: "Kính chào quý khách ạ"
+    - text: "Xin chào bạn"
+    - text: "Hân hạnh được phục vụ ạ"
+
+  utter_ask_name:
+    - text: "Mình tên là Riri, mình là bot order trà của Tiệm trà"
+    - text: "Ông chủ gọi mình là Riri ạ"
+
+  utter_ask_menu:
+    - text: "Mình gửi bạn menu nhaaa"
+    - text: "Menu tới liền đây"
+
+  utter_goodbye:
+    - text: "Xin chào và hẹn gặp lại ạ"
+    - text: "Xin tạm biệt và hân hạnh được phục vụ quý khách lần nữa ạ"
+
+  utter_say_goodbye:
+    - text: "Xin chào và hẹn gặp lại ạ"
+    - text: "Xin tạm biệt và hân hạnh được phục vụ quý khách lần nữa ạ"
+
+  utter_re_thanks:
+    - text: "Dạ hân hạnh được phục vụ quý khách"
+    - text: "Dạ không có chi ạ"
+
+  utter_tea_confirm:
+    - text: "Xác nhận bạn order {tea_quan} {tea_type} size {tea_size}."
+
+  utter_ask_tea_type:
+    - text: "Bạn muốn mua loại trà gì ạ ?"
+
+  utter_ask_tea_size:
+    - text: "Bạn muốn dùng size gì ạ? Chúng mình có size M và size L ạ"
+
+  utter_ask_tea_quan:
+    - text: "Bạn muốn order số lượng bao nhiêu vậy ạ ?"
+
+  utter_get_infor:
+    - text: "Để hoàn tất đơn hàng cho mình xin một vài thông tin bạn nhé!"
+
+  utter_ask_phone:
+    - text: "Bạn vui lòng cho mình xin số điện thoại nha"
+
+  utter_ask_user_name:
+    - text: "Bạn vui lòng cho mình xin họ tên bạn nha"
+
+  utter_ask_street:
+    - text: "Bạn vui lòng cho mình địa chỉ giao hàng nha"
+
+  utter_receipt_confirm:
+    - text: "Hoàn tất đơn hàng"
+
+  utter_ask_continue:
+    - text: "Bạn có chắc chắn là muốn dừng mua hàng ?"
+      buttons:
+        - title: "Đúng rồi"
+          payload: "/affirm"
+        - title: "Không phải"
+          payload: "/deny"
+
+  utter_confirm_invoice:
+    - text: "Bạn vui lòng kiểm tra đơn hàng có đúng không ạ"
+      buttons:
+        - title: "Đúng rồi"
+          payload: "/affirm"
+        - title: "Sai rồi"
+          payload: "/deny"
+
+  utter_thanks:
+    - text: "Cám ơn quý khách đã order trà tại Tiệm trà! Đơn hàng sẽ được giao trong vòng vài phút nữa"
+
+  utter_sorry:
+    - text: "Rất xin lỗi quý khách ạ"
+
+  utter_please_rephrase:
+    - text: "Xin lỗi nhưng sự thông thái có giới hạn, bạn vui lòng nhập lại nha"
+
+  utter_default:
+    - text: "Xin lỗi mình không hiểu! Vui lòng nhập lại."
+
+  utter_confirm_continue:
+    - text: "Xác nhận tiếp tục"
+
+  utter_ask_function:
+    - text: "Dạ mình có thể gửi menu cho bạn, giúp bạn order trà ạ."
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_say_goodbye
+  - utter_ask_name
+  - utter_ask_menu
+  - action_return_menu
+  - validate_tea_form
+  - action_return_tea_price
+  - action_inquired_tea_type
+  - validate_infor_form
+  - action_return_invoice
+  - action_submit_invoice
+  - action_cancel_invoice
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

@@ -1,0 +1,99 @@
+version: "3.1"
+
+stories:
+  - story: path1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_name
+      - action: utter_ask_name
+      - intent: ask_menu
+      - action: utter_ask_menu
+      - action: action_return_menu
+      - intent: goodbye
+      - action: utter_say_goodbye
+
+  - story: path2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_menu
+      - action: utter_ask_menu
+      - action: action_return_menu
+      - intent: goodbye
+      - action: utter_say_goodbye
+
+  - story: path1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_name
+      - action: utter_ask_name
+      - intent: goodbye
+      - action: utter_say_goodbye
+
+  - story: buy tea 2
+    steps:
+      - intent: buy_tea
+      - action: tea_form
+      - active_loop: tea_form
+      - active_loop: null
+      - action: utter_tea_confirm
+      - checkpoint: inform_infor2
+
+  - story: inform infor
+    steps:
+      - checkpoint: inform_infor
+      - action: utter_get_infor
+      - action: infor_form
+      - active_loop: infor_form
+      - slot_was_set:
+          - requested_slot: phone
+      - slot_was_set:
+          - phone: null
+      - slot_was_set:
+          - phone: 0335459023
+      - slot_was_set:
+          - requested_slot: user_name
+      - slot_was_set:
+          - user_name: null
+      - slot_was_set:
+          - user_name: Đăng
+      - slot_was_set:
+          - requested_slot: address
+      - slot_was_set:
+          - address: null
+      - active_loop: null
+      - action: action_return_invoice
+      - action: utter_confirm_invoice
+      - checkpoint: confirm_invoice
+
+  - story: inform infor 2
+    steps:
+      - checkpoint: inform_infor2
+      - action: utter_get_infor
+      - action: infor_form
+      - active_loop: infor_form
+      - active_loop: null
+      - action: action_return_invoice
+      - action: utter_confirm_invoice
+      - checkpoint: confirm_invoice
+
+  - story: accept invoice
+    steps:
+      - checkpoint: confirm_invoice
+      - intent: affirm
+      - action: action_submit_invoice
+      - action: utter_thanks
+      - or:
+          - intent: goodbye
+          - intent: thanks
+     
+
+  - story: deny invoice
+    steps:
+      - checkpoint: confirm_invoice
+      - intent: deny
+      - action: action_cancel_invoice
+      - action: utter_sorry
+      - action: utter_goodbye

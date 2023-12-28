@@ -1,0 +1,6 @@
+.card {
+    transition: 0.3s all ease;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
