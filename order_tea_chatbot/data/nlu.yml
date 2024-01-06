@@ -1200,80 +1200,80 @@ nlu:
       - tên [Thuận Anh](user_name)
       - tên [Thuận Hòa](user_name)
       - tên [Thuận Phong](user_name)
-      - tên [Ninh Kiều](user_name)
-      - dạ mình ở số [239](house_num), [đường Tạ Thị Phi](street), phường [Long Tiền](ward), quận [Bình Thủy](district)
-      - giao cho mình tại [29/C2](house_num), [khu dân cư tổ 3A](department), phường [An Bình](ward), quận [Ninh Kiều](district)
-      - ở số [8](house_num), [đường số 7](street), [khu tái định cư Thới Nhựt 2](department), phường [An Khánh](ward), quận [Ninh Kiều](district)
-      - địa chỉ là [209C](house_num), [hẻm 49](department), [đường Trần Hoàng Na](street), phường [Hưng Lợi](ward), quận [Ninh Kiều](district)
-      - mình ở tại [182](house_num) [Tầm Vu](street), [Ninh Kiều](district), [Cần Thơ](city)
-      - [500](house_num) [đường 30 Tháng 4](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - tên [Thủ Đức](user_name)
+      - dạ mình ở số [239](house_num), [đường Tạ Thị Phi](street), phường [Long Tiền](ward), quận [Thủ Đức](district)
+      - giao cho mình tại [29/C2](house_num), [khu dân cư tổ 3A](department), phường [An Bình](ward), quận [Thủ Đức](district)
+      - ở số [8](house_num), [đường số 7](street), [khu tái định cư Thới Nhựt 2](department), phường [An Khánh](ward), quận [Thủ Đức](district)
+      - địa chỉ là [209C](house_num), [hẻm 49](department), [đường Trần Hoàng Na](street), phường [Hưng Lợi](ward), quận [Thủ Đức](district)
+      - mình ở tại [182](house_num) [Tầm Vu](street), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [500](house_num) [đường 30 Tháng 4](street), [Hưng Lợi](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
       - [đường Ngô Đức Kế](street), [Tân An](ward)
-      - [100](house_num) [Quang Trung](street), [Hưng Phú](ward), [Cái Răng](district), 
-      - [Hẻm 132](department) [Ba Tháng Hai](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [100](house_num) [Quang Trung](street), [Hưng Phú](ward), [Thủ Đức](district), 
+      - [Hẻm 132](department) [Ba Tháng Hai](street), [Hưng Lợi](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
       - số [228](house_num), [đường 3/2](street), [Hưng Lợi](ward), 
-      - [307H](house_num), [đường Nguyễn Văn Linh](street), Phường [An Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - số [163e](house_num), [đường Nguyễn Văn Cừ nối dài](street), Phường [An Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - [171](house_num), [Đường số 24](street), [An Hoà](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - [84](house_num), [đường Mậu Thân](street), [An Hoà](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - [34-36](house_num) [Đường A8](street), [KDC Hưng Phú 1](department), [Cái Răng](district), [Cần Thơ](city)
-      - [135](house_num), [Khu Vực Hòa An](department), Phường [Thới Hòa](ward), [Cái Răng](district), 
-      - số [168](house_num) [Đường Song Hành](street), [QL1A Khu Vực 5](department), [Hưng Thành](ward), [Cái Răng](district), [Cần Thơ](city)
-      - [Hẻm 195](department) [đường 3 Tháng 2](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - [18g](house_num) [Hẻm 51](department), Phường [An Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - [109](house_num) [Trần Văn Khéo](street), [Cái Khế](ward), [Ninh Kiều](district), [Cần Thơ](city)
+      - [307H](house_num), [đường Nguyễn Văn Linh](street), Phường [An Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - số [163e](house_num), [đường Nguyễn Văn Cừ nối dài](street), Phường [An Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [171](house_num), [Đường số 24](street), [An Hoà](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [84](house_num), [đường Mậu Thân](street), [An Hoà](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [34-36](house_num) [Đường A8](street), [KDC Hưng Phú 1](department), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [135](house_num), [Khu Vực Hòa An](department), Phường [Thới Hòa](ward), [Thủ Đức](district), 
+      - số [168](house_num) [Đường Song Hành](street), [QL1A Khu Vực 5](department), [Hưng Thành](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [Hẻm 195](department) [đường 3 Tháng 2](street), [Hưng Lợi](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [18g](house_num) [Hẻm 51](department), Phường [An Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [109](house_num) [Trần Văn Khéo](street), [Cái Khế](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
       - [97](house_num) [Nguyễn Trãi](street) Phường [Tân An](ward) Can Tho City
-      - [127](house_num) [Nguyễn Trãi](street), [Tân An](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - [Hoàng Văn Thụ](street), (An Hội)(ward), [Ninh Kiều](district), 
-      - [24](house_num) [Hùng Vương](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - [54/1](house_num) [Hùng Vương](street), [An Hội](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [35](house_num) [đường Phạm Ngũ Lão](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [24](house_num) [đường Trần Việt Châu](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [54/34](house_num) [đường Trần Việt Châu](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [146G](house_num) [đường Trần Văn Hoài](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [1/3D](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [279](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [9B](house_num) [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [162/18](house_num), [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [172C](house_num) [Ba Tháng Hai](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [290](street) [đường Lê Bình](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [Hẻm 290/27](department), [đường Lê Bình](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [213](house_num) [đường Nguyễn Văn Linh](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [190](house_num) [đường 30 Tháng 4](street), [Hưng Lợi](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [188C](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [45](house_num) [Quang Trung](street), [An Lạc](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [19A](house_num) [Đại lộ Hoà Bình](street), [Tân An](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [37](house_num) [đường Đề Thám](street), [Tân An](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [138A](house_num) [Đường Nguyễn An Ninh](street), [Tân An](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [42](house_num) [đường Phan Văn Trị](street), [An Lạc](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [64-64A](house_num) [đường Lý Tự Trọng](street), [An Cư](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - số [65/15A](house_num) [đường Trần Hưng Đạo](street), [An Cư](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [45/36c](house_num) [đường Huỳnh Thúc Kháng](street), [An Nghiệp](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [89/4](house_num) [đường Huỳnh Thúc Kháng](street), [An Nghiệp](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [126A](house_num) [đường Lê Anh Xuân](street), [An Nghiệp](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [34](house_num) [đường Cách Mạng Tháng 8](street), [Thới Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [77c](house_num) [Trần Phú](street), [Cái Khế](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
+      - [127](house_num) [Nguyễn Trãi](street), [Tân An](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [Hoàng Văn Thụ](street), (An Hội)(ward), [Thủ Đức](district), 
+      - [24](house_num) [Hùng Vương](street), [Thới Bình](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [54/1](house_num) [Hùng Vương](street), [An Hội](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [35](house_num) [đường Phạm Ngũ Lão](street), [Thới Bình](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [24](house_num) [đường Trần Việt Châu](street), [Thới Bình](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [54/34](house_num) [đường Trần Việt Châu](street), [Thới Bình](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [146G](house_num) [đường Trần Văn Hoài](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [1/3D](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [279](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [9B](house_num) [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [162/18](house_num), [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [172C](house_num) [Ba Tháng Hai](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [290](street) [đường Lê Bình](street), [Hưng Lợi](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [Hẻm 290/27](department), [đường Lê Bình](street), [Hưng Lợi](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [213](house_num) [đường Nguyễn Văn Linh](street), [Hưng Lợi](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [190](house_num) [đường 30 Tháng 4](street), [Hưng Lợi](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [188C](house_num) [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [45](house_num) [Quang Trung](street), [An Lạc](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [19A](house_num) [Đại lộ Hoà Bình](street), [Tân An](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [37](house_num) [đường Đề Thám](street), [Tân An](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [138A](house_num) [Đường Nguyễn An Ninh](street), [Tân An](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [42](house_num) [đường Phan Văn Trị](street), [An Lạc](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [64-64A](house_num) [đường Lý Tự Trọng](street), [An Cư](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - số [65/15A](house_num) [đường Trần Hưng Đạo](street), [An Cư](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [45/36c](house_num) [đường Huỳnh Thúc Kháng](street), [An Nghiệp](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [89/4](house_num) [đường Huỳnh Thúc Kháng](street), [An Nghiệp](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [126A](house_num) [đường Lê Anh Xuân](street), [An Nghiệp](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [34](house_num) [đường Cách Mạng Tháng 8](street), [Thới Bình](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [77c](house_num) [Trần Phú](street), [Cái Khế](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
       - [hẻm 9](department) [Phạm Ngọc Hưng](street) [An Hòa](ward)
-      - [25AA](house_num) [Nguyễn Văn Cừ nối dài](street), [An Bình](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [6/46](house_num) [đường Mạc Thiên Tích](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [124/18](house_num) [đường 3/2](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - Số [2A3](house_num), [Hẻm 3T2](department), [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [352](house_num), [Hẻm 139](department) [30 Tháng 4](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [251/38A] [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Ninh Kiều](district), [Cần Thơ](city), Việt Nam
-      - [16](house_num) [Quang Trung](street), [Hưng Phú](ward), [Cái Răng](district), [Cần Thơ](city)
-      - [K2](house_num) [đường Số 2](street), [Khu dân cư Nông Thổ Sản](department), [Cái Răng](district), [Cần Thơ](city)
-      - [55](house_num) [Nguyễn Thị Sáu](street), [Phú Thứ](ward), [Cái Răng](district), [Cần Thơ](city)
-      - [105](house_num) [Phạm Văn Nhờ](street), [Hưng Phú](ward), [Cái Răng](district), [Cần Thơ](city)
-      - [36](house_num) [Phạm Văn Nhờ](street), [Khu dân cư Vạn Phong](department), [Cái Răng](district), [Cần Thơ](city)
-      - [33](house_num) [đường Lê Văn Tưởng](street), [KDC 586](department), [Cái Răng](district), [Cần Thơ](city)
-      - số [66](house_num) [Đường Số 3](street), [An Bình](ward), [Bình Thủy](district), [Cần Thơ](city)
-      - [206](house_num) [Võ Văn Kiệt](street), [An Hoà](ward), [Ninh Kiều](district), [Cần Thơ](city)
-      - [416/14](house_num) [đường F7](street), [Khu Dân Cư Bình Nhựt](department), [Bình Thủy](district), [Cần Thơ](city), Việt Nam
+      - [25AA](house_num) [Nguyễn Văn Cừ nối dài](street), [An Bình](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [6/46](house_num) [đường Mạc Thiên Tích](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [124/18](house_num) [đường 3/2](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - Số [2A3](house_num), [Hẻm 3T2](department), [đường 30 Tháng 4](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [352](house_num), [Hẻm 139](department) [30 Tháng 4](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [251/38A] [đường Trần Ngọc Quế](street), [Xuân Khánh](ward), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
+      - [16](house_num) [Quang Trung](street), [Hưng Phú](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [K2](house_num) [đường Số 2](street), [Khu dân cư Nông Thổ Sản](department), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [55](house_num) [Nguyễn Thị Sáu](street), [Phú Thứ](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [105](house_num) [Phạm Văn Nhờ](street), [Hưng Phú](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [36](house_num) [Phạm Văn Nhờ](street), [Khu dân cư Vạn Phong](department), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [33](house_num) [đường Lê Văn Tưởng](street), [KDC 586](department), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - số [66](house_num) [Đường Số 3](street), [An Bình](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [206](house_num) [Võ Văn Kiệt](street), [An Hoà](ward), [Thủ Đức](district), [Hồ Chí Minh](city)
+      - [416/14](house_num) [đường F7](street), [Khu Dân Cư Bình Nhựt](department), [Thủ Đức](district), [Hồ Chí Minh](city), Việt Nam
       - [đường B4](street) [khu dân cư 91B](department)
       - [10](house_num) [Trần Đại Nghĩa](street)
       - [45](house_num) [Xô Viết Nghệ Tĩnh](street)
       - [DH7](house_num) [Vũ Đình Liệu](street), [KDC Nam Long](department)
       - [51A9A](house_num) [Trần Nam Phú](street)
-      - [Đinh Công Chánh](street), Q [Bình Thuỷ](district), TP [Cần Thơ](city)
+      - [Đinh Công Chánh](street), Q [Bình Thuỷ](district), TP [Hồ Chí Minh](city)
       - [131](house_num) [Lý Tự Trọng](street)
       - [1911](house_num) [Võ Văn Kiệt](street)
       - [58 - 60](house_num) [Trần Bạch Đằng](street), P [An Khánh](ward)
@@ -1288,7 +1288,7 @@ nlu:
       - [17](house_num) [Hải Thượng Lãn Ông](street)
       - [12A](house_num) [Lê Anh Xuân](street)
       - [79/21C](house_num), [Hùng Vương](street)
-      - [A3](house_num) [KDC 923](department) [Cái Răng](district)
+      - [A3](house_num) [KDC 923](department) [Thủ Đức](district)
       - [Đại lộ Hoà Bình](street)
       - [42](house_num) [Phạm Ngọc Thạch](street)
       - [150 - 152](house_num), [Đường Cách Mạng Tháng Tám](street)
@@ -1308,7 +1308,7 @@ nlu:
       - [51A9A](house_num) [Trần Nam Phú](street)
       - [102/18](house_num) [Lê Lai](street)
       - [48](house_num) [Xô Viết Nghệ Tĩnh](street)
-      - Số [17](house_num) [Đường Hải Thượng Lãng Ông](street), [Tân An](ward), [Ninh Kiều](district)
+      - Số [17](house_num) [Đường Hải Thượng Lãng Ông](street), [Tân An](ward), [Thủ Đức](district)
       - [23](house_num) [Hai Bà Trưng](street)
       - [0335459023](phone)
       - số điện thoại của mình là [0984157024](phone)
